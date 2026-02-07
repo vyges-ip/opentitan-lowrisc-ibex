@@ -1,0 +1,20 @@
+schema_version: "vyges-upstream-v1"
+upstream:
+  type: "monorepo"
+  source: https://github.com/lowRISC/opentitan
+  path: hw/vendor/lowrisc_ibex
+  commit: 2c4494abe96725082ac46bac3e94405277bbd166
+  extracted_at: ""
+import:
+  rtl:
+    - path: "rtl"
+      map_to: "rtl"
+    - path: "syn"
+      map_to: "syn"
+  license:
+    - path: "apache-2.0"
+  readme:
+    - path: "README.md"
+license:
+  spdx: Apache-2.0
+  file: apache-2.0
