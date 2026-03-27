@@ -1,1 +1,26 @@
-{"name":"opentitan-lowrisc-ibex","version":"0.1.0","license":"Apache-2.0","source":{"type":"git","url":"https://github.com/lowRISC/opentitan","commit":"2c4494abe96725082ac46bac3e94405277bbd166"}}
+{
+  "$schema": "https://vyges.com/schema/v1/vyges-metadata.schema.json",
+  "x-version": "1.0.0",
+  "name": "opentitan-lowrisc-ibex",
+  "version": "0.1.0",
+  "description": "Full Ibex RV32IMC RISC-V CPU core RTL. 2-stage pipeline, configurable register file (FF/FPGA/latch), optional PMP, optional ICache, branch predictor, and SecureIbex mode. 30 RTL files. Extracted from lowRISC/ibex via OpenTitan.",
+  "license": "Apache-2.0",
+  "maturity": "production",
+  "target": ["asic", "fpga"],
+  "design_type": ["digital"],
+  "created": "2026-02-19T06:12:02Z",
+  "updated": "2026-03-27T19:35:00Z",
+  "source": {"type": "git", "url": "https://github.com/lowRISC/opentitan", "private": false, "rtl_path": "rtl"},
+  "maintainers": [{"name": "Vyges", "email": "team@vyges.com", "github": "vyges"}],
+  "interfaces": [{"type": "bus", "direction": "slave", "protocol": "TL-UL", "port": "tl", "width": 32}],
+  "architecture": {"type": "peripheral", "features": ["RV32IMC instruction set (Integer, Multiply, Compressed)", "2-stage pipeline (IF/ID+EX), configurable to 3-stage with writeback", "Configurable register file: FF (ASIC), FPGA, or latch", "Optional PMP (Physical Memory Protection)", "Optional instruction cache (ICache)", "Branch predictor", "SecureIbex mode with lockstep and shadow registers", "Full debug support (JTAG via rv_dm)", "30 RTL files, 19,627 lines"]},
+  "dependencies": [{"name": "opentitan-prim", "type": "library"}, {"name": "opentitan-tlul", "type": "bus"}],
+  "documentation": {"upstream": "https://opentitan.org/book/hw/ip/lowrisc-ibex/"},
+  "artifacts": {"total_rtl_lines": 19627},
+  "categories": {"primary": "cpu", "secondary": ["risc-v", "processor"], "tags": ["ibex", "rv32imc", "risc-v", "cpu", "pipeline", "opentitan", "lowrisc"]},
+  "trust": {"verification_level": "silicon_proven", "tapeout_count": 3, "maintained": true, "last_activity": "2026-03-27"},
+  "asic": {"flavor": "digital", "technology": ["sky130A"]},
+  "fpga": {"toolchain": ["Vivado", "Yosys"]},
+  "keywords": ["lowrisc-ibex", "opentitan", "tl-ul"],
+  "meta": {"template": {"generator": "manual (gold-standard pass 2026-03-27)"}, "schema": {"version": "1.0.0"}}
+}
