@@ -14,7 +14,7 @@
     "digital"
   ],
   "created": "2026-03-27T23:05:23Z",
-  "updated": "2026-03-27T23:05:23Z",
+  "updated": "2026-04-02T03:11:53Z",
   "source": {
     "type": "git",
     "url": "https://github.com/lowRISC/opentitan",
@@ -240,5 +240,50 @@
     "schema": {
       "version": "1.0.0"
     }
-  }
+  },
+  "rtl_files": [
+    "rtl/ibex_alu.sv",
+    "rtl/ibex_branch_predict.sv",
+    "rtl/ibex_compressed_decoder.sv",
+    "rtl/ibex_controller.sv",
+    "rtl/ibex_core.sv",
+    "rtl/ibex_counter.sv",
+    "rtl/ibex_cs_registers.sv",
+    "rtl/ibex_csr.sv",
+    "rtl/ibex_decoder.sv",
+    "rtl/ibex_dummy_instr.sv",
+    "rtl/ibex_ex_block.sv",
+    "rtl/ibex_fetch_fifo.sv",
+    "rtl/ibex_icache.sv",
+    "rtl/ibex_id_stage.sv",
+    "rtl/ibex_if_stage.sv",
+    "rtl/ibex_load_store_unit.sv",
+    "rtl/ibex_lockstep.sv",
+    "rtl/ibex_multdiv_fast.sv",
+    "rtl/ibex_multdiv_slow.sv",
+    "rtl/ibex_pkg.sv",
+    "rtl/ibex_pmp.sv",
+    "rtl/ibex_prefetch_buffer.sv",
+    "rtl/ibex_register_file_ff.sv",
+    "rtl/ibex_register_file_fpga.sv",
+    "rtl/ibex_register_file_latch.sv",
+    "rtl/ibex_top.sv",
+    "rtl/ibex_top_tracing.sv",
+    "rtl/ibex_tracer.sv",
+    "rtl/ibex_tracer_pkg.sv",
+    "rtl/ibex_wb_stage.sv"
+  ],
+  "rtl_quality": {
+    "module_prefixed": true,
+    "defines_prefixed": true,
+    "header_guards": false,
+    "one_module_per_file": true,
+    "self_contained_includes": false,
+    "no_translate_pragmas": true,
+    "lint_clean": false,
+    "no_casex": true,
+    "width_clean": false,
+    "no_sv_keyword_conflicts": true
+  },
+  "defines": []
 }
